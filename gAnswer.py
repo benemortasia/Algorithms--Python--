@@ -2,6 +2,9 @@
 
 
 # Takes some string s that looks like "abccbaabccba"
+# returns the number of pieces that can be equally cut.
+# returns 1 if the string can't be totally cut
+# returns 0 if the string is empty or non-alphabetic
 def Answer(s):
     s = s.strip()
 
@@ -13,6 +16,7 @@ def Answer(s):
 
     # str1 will build like this:
     # 'a', 'ab', 'abc', 'abcc', 'abccb', etc
+    # and attempt to fully replace the original string
     for c in s:
         str1 += c
         if s.replace(str1, '') == '':
