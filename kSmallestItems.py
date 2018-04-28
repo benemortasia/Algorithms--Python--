@@ -2,7 +2,7 @@ import heapq
 import math
 
 
-# prints k number of lowest distance points from center
+# prints k number of lowest distance points from center (0, 0)
 def closest(points, k):
     points_dict = {}
     min_heap = []
