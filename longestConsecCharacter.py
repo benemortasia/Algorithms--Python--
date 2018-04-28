@@ -1,6 +1,6 @@
-# longest consecutive character
 import heapq
 
+# returns the longest consecutive character in a string
 def longestConsecChar(string):
     str1 = string[0]
     max_heap = []
